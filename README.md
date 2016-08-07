@@ -1,4 +1,4 @@
-Northwind
+OvrC Home API Test
 =========
 
-An app to test the Northwind database using NodeJS, AngularJS and MongoDB!
+An app to test the OvrC Home API!
