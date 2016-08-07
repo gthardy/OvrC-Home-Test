@@ -6,7 +6,7 @@ exports.restartAPI = function(req, res){
 
   var options = {
     host: 'api.ovrc.com',
-    //port: 443,
+    port: 443,
     path: '/api/v1/runmacro/579dda910dba83862f7f4365',
     method: 'POST',
     headers: {
@@ -20,7 +20,7 @@ exports.restartAPI = function(req, res){
   };
 
   var post_req = http.request(options, function(res) {
-      //res.setEncoding('utf8');
+      res.setEncoding('utf8');
       res.on('data', function (chunk) {
           console.log('Response: ' + chunk);
       });
