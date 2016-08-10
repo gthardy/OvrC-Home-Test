@@ -9,7 +9,7 @@ app.use(function(req,res,next){
   next();
 });
 
-app.get('/api/ovrc', ovrc.restartAPI);
+app.post('/api/ovrc', ovrc.restartAPI);
 
 app.use(express.static('public'));
 

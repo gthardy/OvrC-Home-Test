@@ -3,7 +3,7 @@ app.controller('mainController', function($scope, $http){
   $scope.ButtonName = "Click API";
 
   $scope.open = function(){
-    $http.get('/api/ovrc')
+    $http.post('/api/ovrc')
       .success(function(data, status, headers, config) {
             console.log("Success!");
         }).error(function(e){
